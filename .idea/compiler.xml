@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="jack-consumer" />
+        <module name="jack-provider" />
+        <module name="registry-center" />
+        <module name="rose-consumer" />
+        <module name="rose-provider" />
+        <module name="service-zuul" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="CommonModule" target="1.8" />
+      <module name="ConsumerModule" target="1.8" />
+      <module name="demo" target="1.8" />
+      <module name="FenbuServices" target="1.8" />
+      <module name="jack-consumer" target="1.8" />
+      <module name="jack-provider" target="1.8" />
+      <module name="ProviderModule" target="1.8" />
+      <module name="registry-center" target="1.8" />
+      <module name="rose-consumer" target="1.8" />
+      <module name="rose-provider" target="1.8" />
+      <module name="service-zuul" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="CommonModule" options="-parameters" />
+      <module name="ConsumerModule" options="-parameters" />
+      <module name="FenbuServices" options="-parameters" />
+      <module name="ProviderModule" options="-parameters" />
+      <module name="jack-consumer" options="-parameters" />
+      <module name="jack-provider" options="-parameters" />
+      <module name="registry-center" options="-parameters" />
+      <module name="rose-consumer" options="-parameters" />
+      <module name="rose-provider" options="-parameters" />
+      <module name="service-zuul" options="-parameters" />
+    </option>
+  </component>
+</project>

@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="registry-center:war">
+    <output-path>$PROJECT_DIR$/CommonModule/registry-center/target</output-path>
+    <root id="archive" name="registry-center-0.0.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="registry-center:war exploded" />
+    </root>
+  </artifact>
+</component>

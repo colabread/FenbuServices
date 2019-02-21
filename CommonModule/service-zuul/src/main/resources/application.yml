@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: service-zuul
+
+server:
+  port: 8771
+
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka
+
+zuul:
+  routes:
+    jack:
+      path: /jack/**
+      service-id: consumer-jack
+    rose:
+      path: /rose/**
+      service-id: consumer-rose
