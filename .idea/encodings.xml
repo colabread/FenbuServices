@@ -3,13 +3,16 @@
   <component name="Encoding" addBOMForNewFiles="with NO BOM">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/CommonModule" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/CommonModule/config-server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/CommonModule/registry-center" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/CommonModule/service-zuul" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ConsumerModule" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ConsumerModule/jack-consumer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ConsumerModule/jack-consumer/src/main/resources/bootstrap.yml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ConsumerModule/rose-consumer" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ProviderModule" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ProviderModule/jack-provider" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ProviderModule/rose-provider" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

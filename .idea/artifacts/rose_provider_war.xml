@@ -1,6 +1,12 @@
 <component name="ArtifactManager">
   <artifact type="war" name="rose-provider:war">
     <output-path>$PROJECT_DIR$/ProviderModule/rose-provider/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>rose-provider</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
     <root id="archive" name="rose-provider-0.0.1-SNAPSHOT.war">
       <element id="artifact" artifact-name="rose-provider:war exploded" />
     </root>

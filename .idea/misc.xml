@@ -17,6 +17,7 @@
         <option value="$PROJECT_DIR$/ProviderModule/rose-provider/pom.xml" />
         <option value="$PROJECT_DIR$/ConsumerModule/rose-consumer/pom.xml" />
         <option value="$PROJECT_DIR$/CommonModule/service-zuul/pom.xml" />
+        <option value="$PROJECT_DIR$/CommonModule/config-server/pom.xml" />
       </list>
     </option>
   </component>

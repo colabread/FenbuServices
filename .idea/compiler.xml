@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="config-server" />
         <module name="jack-consumer" />
         <module name="jack-provider" />
         <module name="registry-center" />
@@ -15,17 +16,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="CommonModule" target="1.8" />
-      <module name="ConsumerModule" target="1.8" />
       <module name="demo" target="1.8" />
-      <module name="FenbuServices" target="1.8" />
-      <module name="jack-consumer" target="1.8" />
-      <module name="jack-provider" target="1.8" />
-      <module name="ProviderModule" target="1.8" />
-      <module name="registry-center" target="1.8" />
-      <module name="rose-consumer" target="1.8" />
-      <module name="rose-provider" target="1.8" />
-      <module name="service-zuul" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -34,6 +25,7 @@
       <module name="ConsumerModule" options="-parameters" />
       <module name="FenbuServices" options="-parameters" />
       <module name="ProviderModule" options="-parameters" />
+      <module name="config-server" options="-parameters" />
       <module name="jack-consumer" options="-parameters" />
       <module name="jack-provider" options="-parameters" />
       <module name="registry-center" options="-parameters" />

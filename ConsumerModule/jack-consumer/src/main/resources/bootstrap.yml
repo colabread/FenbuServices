@@ -1,0 +1,38 @@
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka
+
+server:
+  port: 8766
+
+spring:
+  application:
+    name: consumer-jack
+  cloud:
+    config:
+      profile: test
+      label: master
+      discovery:  #先从注册中心找到配置中心，再从配置中心加载配置文件
+        enabled: true #就不需要配置uri（通过ip寻找）
+        service-id: config-server
+    bus:
+      enabled: true
+      trace:
+        enabled: true
+  rabbitmq:
+    host: 47.52.232.245
+#    host: localhost
+    port: 5672
+    username: admin
+    password: admin
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh  #指定更新配置文件后回调的地址
+
+feign:
+  hystrix:
+    enabled: true #feign自带断路器，只需在此处打开

@@ -24,7 +24,7 @@ public class JackProviderApplication {
 
     @GetMapping("/hello")
     public String hello(@RequestParam String param){
-        return "this is [jack]，param：" + param + "，port：" + port;
+        return "[jack.provider]，param：" + param + "，port：" + port;
     }
 
 }

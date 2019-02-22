@@ -2,6 +2,7 @@ package com.zlxt.roseconsumer;
 
 import com.zlxt.roseconsumer.feign.ProviderRoseFeign;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
@@ -25,9 +26,12 @@ public class RoseConsumerApplication {
     @Autowired
     private ProviderRoseFeign providerRoseFeign;
 
+    @Value("${server.port}")
+    private String port;
+
     @GetMapping("/hello")
     public String hello(@RequestParam String param){
-        return providerRoseFeign.hello(param);
+        return "[rose.consumer]，port：" + port + "，" + providerRoseFeign.hello(param);
     }
 
 

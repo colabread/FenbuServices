@@ -24,7 +24,7 @@ public class RoseProviderApplication {
 
     @GetMapping("/hello")
     public String hello(@RequestParam String param){
-        return "this is [rose]，param：" + param + "，port：" + port;
+        return "[rose.provider]，param：" + param + "，port：" + port;
     }
 
 }
