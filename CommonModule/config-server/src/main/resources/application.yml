@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/colabread/ConfigRepository
+          search-paths: '{profile}'   #根据环境动态获取配置文件
+      label: master
+
+server:
+  port: 8773
+
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka
